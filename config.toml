@@ -1,3 +1,48 @@
 baseURL = "https://alebabai.github.io/"
 languageCode = "en-us"
 title = "Alexander Babai"
+theme = "minimal"
+disqusShortname = "alebabai"
+
+# Menu links
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.icon]]
+    url = "mailto:aliaksandr.babai@gmail.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/alebabai/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/alebabai/"
+    name = "linkedin"
+    weight = 3
+
+[params]
+    author = "Alexander Babai"
+    description = "Development experience is about four years in Java / JS (Backend/Frontend) / DevOps."
+    githubUsername = "alebabai"
+    accent = "darkcyan"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway"
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "java", "javascript"]

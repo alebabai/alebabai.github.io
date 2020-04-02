@@ -1,4 +1,4 @@
-name: Publish to GitHub Pages
+name: GitHub Pages
 
 on:
   push:
@@ -10,15 +10,18 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.4.8
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.68.3'
       - name: Build
-        run: hugo --minify
+        run: hugo --minify -v
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: master
+          force_orphan: true

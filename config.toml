@@ -37,7 +37,7 @@ disqusShortname = "alebabai"
 
 [params]
     author = "Alexander Babai"
-    description = "Development experience is about four years in Java / JS (Backend/Frontend) / DevOps."
+    description = "Development experience is about four years in Java / JS (Backend/Frontend) / DevOps"
     accent = "darkcyan"
     showBorder = true
     backgroundColor = "white"

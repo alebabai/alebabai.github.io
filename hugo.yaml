@@ -1,0 +1,16 @@
+baseURL: https://alebabai.github.io/
+title: The Real Babai
+
+languageCode: en
+defaultContentLanguage: en
+
+taxonomies:
+  tag: tags
+
+enableGitInfo: true
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

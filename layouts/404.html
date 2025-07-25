@@ -1,0 +1,9 @@
+{{- define "main" }}
+  {{- with .GetPage "/_404" | default . }}
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- with resources.Get "images/bebop.webp"}}
+      <img src="{{ .RelPermalink }}" alt="Attack helicopter" style="width:100%; max-width: 500px; height: auto;">
+    {{- end }}
+  {{- end }}
+{{- end }}

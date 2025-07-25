@@ -1,0 +1,6 @@
+User-agent: *
+
+Sitemap: {{ absURL "sitemap.xml" }}
+{{- range (where .Site.RegularPages "Section" "external") }}
+Sitemap: {{ absURL (urls.JoinPath .RelPermalink "sitemap.xml") }}
+{{- end }}

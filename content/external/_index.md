@@ -9,6 +9,9 @@ cascade:
   sitemap:
     disable: true
   menus:
-    - external
+    external:
+      params:
+        attrs: 
+          target: _blank
   url: /:filename
 ---

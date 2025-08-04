@@ -10,6 +10,10 @@ taxonomies:
 enableGitInfo: true
 enableRobotsTXT: true
 
+params:
+  images:
+    - images/cover.jpg
+
 markup:
   goldmark:
     renderer:
